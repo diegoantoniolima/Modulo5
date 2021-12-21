@@ -1,0 +1,8 @@
+package Models;
+public class ObjetosCasa {
+
+	private Geladeira geladeira;
+	private Mesa mesa;
+	private
+	
+}

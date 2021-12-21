@@ -1,0 +1,49 @@
+package Models;
+
+public class Mesa {
+
+	private double largura;
+	private double comprimento;
+	private Cor cor;
+	private boolean cadeiras;
+
+	public Mesa(double largura, double comprimento, Cor cor, boolean cadeiras) {
+		super();
+		this.largura = largura;
+		this.comprimento = comprimento;
+		this.cor = cor;
+		this.cadeiras = cadeiras;
+	}
+
+	public double getLargura() {
+		return largura;
+	}
+
+	public void setLargura(double largura) {
+		this.largura = largura;
+	}
+
+	public double getComprimento() {
+		return comprimento;
+	}
+
+	public void setComprimento(double comprimento) {
+		this.comprimento = comprimento;
+	}
+
+	public Cor getCor() {
+		return cor;
+	}
+
+	public void setCor(Cor cor) {
+		this.cor = cor;
+	}
+
+	public boolean isCadeiras() {
+		return cadeiras;
+	}
+
+	public void setCadeiras(boolean cadeiras) {
+		this.cadeiras = cadeiras;
+	}
+}

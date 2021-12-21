@@ -1,0 +1,25 @@
+package Models;
+
+public enum Cor {
+
+	VERDE("Verde"),
+	AZUL("Azul"),
+	BRANCA("Branca");
+	
+	private String descricao;
+
+	Cor(String string) {
+		
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	
+	
+}

@@ -1,0 +1,20 @@
+import Models.Cor;
+import Models.Geladeira;
+import Models.Mesa;
+import Models.Cor;
+
+public class Main {
+
+	public static void main(String[] args)  {
+	
+		System.out.println("Criar novos objetos para casa!");
+				
+		Geladeira geladeira = new Geladeira("ABC", Cor.BRANCA, 100);
+		Mesa mesa = new Mesa(60, 40, Cor.VERDE, false);
+		
+		System.out.println("-------------------------");
+		System.out.println("Os objetos incluidos foram: ");
+		System.out.println("Uma geladeira do modelo ".concat(geladeira.getModelo()+" de cor "+geladeira.cor+" com peso igual a "+geladeira.getPeso()));
+		System.out.println("Uma mesa com largura de "+mesa.getLargura()+", com comprimento de "+mesa.getComprimento()+" de cor "+mesa.getCor()+" e "+mesa.isCadeiras()+" possui cadeiras");
+	}
+}

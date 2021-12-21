@@ -1,0 +1,6 @@
+
+public class Geladeira {
+
+	public String modelo;
+	public String 
+}

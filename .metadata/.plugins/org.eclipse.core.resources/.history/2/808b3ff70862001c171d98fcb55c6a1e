@@ -1,0 +1,15 @@
+import Models.Cor;
+import Models.Geladeira;
+import Models.Cor;
+
+public class Main {
+
+	public static void main(String[] args)  {
+	
+		System.out.println("Criar novos objetos para casa!");
+		
+		Cor cor = new Cor();
+		
+		Geladeira geladeira = new Geladeira("ABC", , 0);
+	}
+}

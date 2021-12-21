@@ -1,0 +1,99 @@
+import java.util.Scanner;
+
+import Models.Cor;
+import Models.Geladeira;
+import Models.Mesa;
+import Models.Cor;
+
+public class Main {
+
+	public static void main(String[] args)  {
+		System.out.println("--- ADICIONANDO OBJETOS PARA A CASA ---");
+
+		int option;
+
+		do {
+			System.out.println("1 - Cadastro de Objetos");
+			System.out.println("0 - Sair");
+
+			Scanner scanner = new Scanner(System.in);
+
+			System.out.println("Qual operação você deseja realizar: ");
+			option = scanner.nextInt();
+
+			process(option);
+		} while (option != 0);
+	}
+	
+	
+	public static void process(int option) throws Exception {
+		System.out.println("Criar novos objetos para casa!");
+
+		switch (option) {
+		case 1: {
+			Scanner scanner = new Scanner(System.in);
+
+			System.out.println("Vamos adicionar uma Geladeira: ");
+			
+			System.out.println("Digite o modelo da geladeira: ");
+			String modelo = scanner.nextLine();
+			
+			System.out.println("Qual é a cor da geladeira: ");
+			String cor = scanner.nextLine();
+
+			System.out.println("Qual o peso da Geladeira: ");
+			double peso = scanner.nextDouble();
+			
+			
+			System.out.println("Agora vamos adicionar uma mesa ...");
+			System.out.println("Digite a largura da mesa: ");
+			double largura = scanner.nextDouble();
+			
+			System.out.println("Digite o comprimento da mesa: ");
+			double comprimento = scanner.nextDouble();
+			
+			System.out.println("Qual é a cor da mesa: ");
+			String corMesa = scanner.nextLine();
+			
+			System.out.println("A mesa possui cadeiras?: ");
+			boolean cadeiras = scanner.nextBoolean();
+			
+			Geladeira novaGeladeira = new Geladeira(modelo, cor, peso);
+			Mesa novaMesa = new Mesa(largura, comprimento, corMesa, cadeiras);
+			
+
+			System.out.println("Ítens criados com sucesso: ");
+			System.out.println("Geladeira ...");
+			System.out.println("--- :modelo " + novaGeladeira.getModelo());
+			System.out.println("--- :cor " + novaGeladeira.getCor());
+			System.out.println("--- peso: " + novaGeladeira.getPeso());
+			
+			System.out.println("Mesa ...");
+			System.out.println("--- :largura " + novaMesa.getLargura());
+			System.out.println("--- :cor " + novaMesa.getComprimento());
+			System.out.println("--- peso: " + novaMesa.getCor());
+			System.out.println("--- peso: " + novaMesa.isCadeiras());
+			
+			
+			System.out.println("--- Preço: " + novoProduto.getPreco());
+			System.out.println("--- Data de validade: " + novoProduto.getDataValidade());
+			System.out.println("----------------------------------------------");
+		}
+		
+		
+		
+		
+		
+		Geladeira geladeira = new Geladeira("ABC", Cor.BRANCA, 100);
+		Mesa mesa = new Mesa(60, 40, Cor.VERDE, false);
+		
+		System.out.println("-------------------------");
+		System.out.println("Os objetos incluidos foram: ");
+		System.out.println("Uma geladeira do modelo ".concat(geladeira.getModelo()+" de cor "+geladeira.cor+" com peso igual a "+geladeira.getPeso()+"kg"));
+		System.out.println("Uma mesa com largura de "+mesa.getLargura()+"cm, com comprimento de "+mesa.getComprimento()+"cm de cor "+mesa.getCor()+" e "+mesa.isCadeiras()+" possui cadeiras");
+	
+	}
+	
+	
+	
+}

@@ -1,0 +1,10 @@
+import Models.Geladeira;
+import Models.Mesa;
+
+public class ObjetosCasa {
+
+	private Geladeira geladeira;
+	private Mesa mesa;
+	private
+	
+}

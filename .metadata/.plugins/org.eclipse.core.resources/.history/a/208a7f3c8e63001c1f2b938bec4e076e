@@ -4,9 +4,9 @@ public class Geladeira {
 
 	public String modelo;
 	public String cor;
-	public Double peso;
-	
-	public Geladeira(String modelo, String cor, Double peso) {
+	public double peso;
+
+	public Geladeira(String modelo, String cor, double peso) {
 		super();
 		this.modelo = modelo;
 		this.cor = cor;
@@ -29,14 +29,11 @@ public class Geladeira {
 		this.cor = cor;
 	}
 
-	public Double getPeso() {
+	public double getPeso() {
 		return peso;
 	}
 
-	public void setPeso(Double peso) {
+	public void setPeso(double peso) {
 		this.peso = peso;
 	}
-
-	
-	
 }

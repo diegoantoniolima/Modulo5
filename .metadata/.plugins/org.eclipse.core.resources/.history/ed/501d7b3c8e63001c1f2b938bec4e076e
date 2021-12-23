@@ -2,12 +2,12 @@ package Models;
 
 public class Mesa {
 
-	private Double largura;
-	private Double comprimento;
+	private double largura;
+	private double comprimento;
 	private String cor;
-	private Boolean cadeiras;
+	private boolean cadeiras;
 
-	public Mesa(Double largura, Double comprimento, String cor, Boolean cadeiras) {
+	public Mesa(double largura, double comprimento, String cor, boolean cadeiras) {
 		super();
 		this.largura = largura;
 		this.comprimento = comprimento;
@@ -15,19 +15,19 @@ public class Mesa {
 		this.cadeiras = cadeiras;
 	}
 
-	public Double getLargura() {
+	public double getLargura() {
 		return largura;
 	}
 
-	public void setLargura(Double largura) {
+	public void setLargura(double largura) {
 		this.largura = largura;
 	}
 
-	public Double getComprimento() {
+	public double getComprimento() {
 		return comprimento;
 	}
 
-	public void setComprimento(Double comprimento) {
+	public void setComprimento(double comprimento) {
 		this.comprimento = comprimento;
 	}
 
@@ -39,11 +39,11 @@ public class Mesa {
 		this.cor = cor;
 	}
 
-	public Boolean getCadeiras() {
+	public boolean isCadeiras() {
 		return cadeiras;
 	}
 
-	public void setCadeiras(Boolean cadeiras) {
+	public void setCadeiras(boolean cadeiras) {
 		this.cadeiras = cadeiras;
 	}
 }

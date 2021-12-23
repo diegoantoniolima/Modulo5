@@ -39,7 +39,7 @@ public class Main {
 			String cor = scanner.nextLine();
 
 			System.out.println("Qual o peso da Geladeira: ");
-			Double peso = scanner.nextDouble();
+			double peso = scanner.nextDouble();
 			
 			
 			System.out.println("-------");
@@ -47,17 +47,17 @@ public class Main {
 			
 			System.out.println("Agora vamos adicionar uma mesa ...");
 			System.out.println("Digite a largura da mesa: ");
-			Double largura = scanner.nextDouble();
+			double largura = scanner.nextDouble();
 
 			System.out.println("Digite o comprimento da mesa: ");
-			Double comprimento = scanner.nextDouble();
+			double comprimento = scanner.nextDouble();
 
 			System.out.println("Qual é a cor da mesa: ");
 			String corMesa = scanner.next();
 
 			System.out.println("A mesa possui cadeiras [sim/nao]?: ");
 			String possuiCadeiras = scanner.next();
-			Boolean cadeiras=false;
+			boolean cadeiras=false;
 			
 			if ((possuiCadeiras=="sim") || (possuiCadeiras=="Sim") || (possuiCadeiras=="SIM"))
 				cadeiras=true;
@@ -82,5 +82,6 @@ public class Main {
 			System.out.println("----------------------------------------------");
 		}
 		}
+
 	}
 }

@@ -40,11 +40,9 @@ public class Main {
 
 			System.out.println("Qual o peso da Geladeira: ");
 			Double peso = scanner.nextDouble();
-			
-			
+
 			System.out.println("-------");
-			
-			
+
 			System.out.println("Agora vamos adicionar uma mesa ...");
 			System.out.println("Digite a largura da mesa: ");
 			Double largura = scanner.nextDouble();
@@ -57,17 +55,16 @@ public class Main {
 
 			System.out.println("A mesa possui cadeiras [sim/nao]?: ");
 			String possuiCadeiras = scanner.next();
-			Boolean cadeiras=false;
-			
-			if ((possuiCadeiras=="sim") || (possuiCadeiras=="Sim") || (possuiCadeiras=="SIM"))
-				cadeiras=true;
-			else if ((possuiCadeiras=="nao") || (possuiCadeiras=="Nao") || (possuiCadeiras=="NAO"))
+			Boolean cadeiras = false;
+
+			if ((possuiCadeiras == "sim") || (possuiCadeiras == "Sim") || (possuiCadeiras == "SIM"))
+				cadeiras = true;
+			else if ((possuiCadeiras == "nao") || (possuiCadeiras == "Nao") || (possuiCadeiras == "NAO"))
 				cadeiras = false;
-						
+
 			Geladeira novaGeladeira = new Geladeira(modelo, cor, peso);
 			Mesa novaMesa = new Mesa(largura, comprimento, corMesa, cadeiras);
 
-			
 			System.out.println("Ítens criados com sucesso: ");
 			System.out.println("Geladeira ...");
 			System.out.println("--- modelo " + novaGeladeira.getModelo());
